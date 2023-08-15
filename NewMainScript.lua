@@ -14,7 +14,7 @@ local function displayErrorPopup(text, func)
 	local prompt = ErrorPrompt.new("Default")
 	prompt._hideErrorCode = true
 	local gui = Instance.new("ScreenGui", game:GetService("CoreGui"))
-	prompt:setErrorTitle("Star")
+	prompt:setErrorTitle("Vape")
 	prompt:updateButtons({{
 		Text = "OK",
 		Callback = function() 
@@ -50,7 +50,7 @@ end
 
 if not shared.VapeDeveloper then 
 	local commit = "main"
-	for i,v in pairs(game:HttpGet("https://github.com/IslamStar1/Star-Hacks"):split("\n")) do 
+	for i,v in pairs(game:HttpGet("https://github.com/7GrandDadPGN/VapeV4ForRoblox"):split("\n")) do 
 		if v:find("commit") and v:find("fragment") then 
 			local str = v:split("/")[5]
 			commit = str:sub(0, str:find('"') - 1)
